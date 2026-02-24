@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Mahasiswa</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 30px;
+        background: linear-gradient(90deg, #ff6fa5, #ffb6d9);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    /* LOGO SUDAH TANPA LINGKARAN */
+    header img {
+        height: 50px;
+        width: 50px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    form {
+        background: white;
+        padding: 25px;
+        border-radius: 18px;
+        width: 220px;
+        box-shadow: 0px 15px 40px rgba(0,0,0,0.25);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ff6fa5;
+        font-size: 18px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 7px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 9px;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #ff6fa5, #ffb6d9);
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    footer {
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="Logo unila.png">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+
+    <form>
+        <h2>Form Input Mahasiswa</h2>
+
+        <label>Nama</label>
+        <input type="text" placeholder="Masukkan Nama">
+
+        <label>NPM</label>
+        <input type="number" placeholder="Masukkan NPM">
+
+        <label>Kelas</label>
+        <select>
+            <option>Pilih Kelas</option>
+            <option>A</option>
+            <option>B</option>
+        </select>
+
+        <label>Tanggal</label>
+        <input type="date">
+
+        <label>Waktu</label>
+        <input type="time">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        ~ Prak3 PEMWEB DIAN
+    </footer>
+
+</section>
+
+</body>
+</html>
